@@ -51,8 +51,10 @@ form.addEventListener('submit', (e) => {
 
 remove.addEventListener('click', () => {
     // Step 2 -- add code to allow users to remove the most recent stat
+    stats.pop();
     // Hint -- how do you remove an element from an array?
     // Hint -- how can we rerender the stats using a function above?
+    renderStats();
 });
 
 save.addEventListener('click', () => {
@@ -63,3 +65,4 @@ save.addEventListener('click', () => {
     // Push the new object onto the games array then call renderGames
     // reset the stats with resetStats
 });
+
