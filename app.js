@@ -41,7 +41,7 @@ form.addEventListener('submit', (e) => {
     // { player: 'Bob', points: 2 }
     const playerStats = {
         player: playerData.get('player'),
-        points: playerData.get('points')
+        points: parseInt(playerData.get('points'))
     };
     // Hint -- create the object from the form, push it onto the stats array, then call renderStats
     stats.push(playerStats);
